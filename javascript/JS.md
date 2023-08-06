@@ -1,8 +1,10 @@
 # Call，Apply，Bind
 
-call和apply改变函数内部的this指向，
+**call和apply改变函数内部的this指向，**
 
-call和apply类似，参数上的却别，call是多个参数，apply是数组
+**call和apply类似，参数上的却别，call是多个参数，apply是数组**
+
+
 
 ```javascript
 func.call(thisObj, args1, args2, ...)
