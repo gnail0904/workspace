@@ -6,4 +6,3 @@ git add .
 git commit -m "%cur%"
 git push origin master
 echo %cur%
-pause
