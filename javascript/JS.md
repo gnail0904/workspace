@@ -55,5 +55,8 @@ const newCarPrice = new definePrice(100000);
 
 # 目标
 
-
+1. 使用JavaScript创建，关联，扩展对象，构建大型的复杂应用
+2. JavaScript设计模式
+   1. 单例模式
+3. 
 
