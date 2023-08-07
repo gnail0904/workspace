@@ -47,6 +47,12 @@ const newCarPrice = new definePrice(100000);
 
 
 
+# This
+
+1. 为什么使用this
+
+   随着你的使用模式越来越复杂，显示传递上下文对象会让代码变得越来越混乱，使用this则不会zhe'yang
+
 
 
 # 心得
