@@ -66,6 +66,20 @@ const newCarPrice = new definePrice(100000);
 3. 这个新对象会绑定到函数调用的 this。 
 4. 如果函数没有返回其他对象，那么 new 表达式中的函数调用会自动返回这个新对象。
 
+# ES6增加了可计算属性名
+
+```javascript
+var prefix = "foo";
+var myObject = {
+[prefix + "bar"]:"hello",
+[prefix + "baz"]: "world"
+};
+myObject["foobar"]; // hello
+myObject["foobaz"]; // world
+```
+
+
+
 
 
 # 心得
