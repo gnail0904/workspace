@@ -141,6 +141,23 @@ class Rectangle {
 
 
 
+# 原型
+
+```javascript
+// 和你想要的机制不一样！
+Bar.prototype = Foo.prototype;
+// 基本上满足你的需求，但是可能会产生一些副作用 :(
+Bar.prototype = new Foo();
+```
+
+Bar.prototype = Foo.prototype 并不会创建一个关联到 Bar.prototype 的新对象，它只 是让 Bar.prototype 直接引用 Foo.prototype 对象。因此当你执行类似 Bar.prototype. myLabel = ... 的赋值语句时会直接修改 Foo.prototype 对象本身。显然这不是你想要的结 果，否则你根本不需要 Bar 对象，直接使用 Foo 就可以了，这样代码也会更简单一些。
+
+
+
+```javascript
+Bar.prototype = Object.create( Foo.prototype )。
+```
+
 
 
 # 心得
