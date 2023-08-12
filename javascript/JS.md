@@ -88,6 +88,46 @@ for(var val in obj){
 }
 ```
 
+**普通的对象没有内置的 @@iterator，所以无法自动完成 for..of 遍历。之所 以要这样做，有许多非常复杂的原因，不过简单来说，这样做是为了避免影响未来的对象 类型**
+
+你可以使用 ES6 的 for..of 语法来遍历数据结构（数组、对象，等等）中的值，for..of 会寻找内置或者自定义的 @@iterator 对象并调用它的 next() 方法来遍历数据值。
+
+```javascript
+var myObject = {
+a: 2,
+b: 3
+};
+Object.defineProperty( myObject, Symbol.iterator, {
+enumerable: false,
+writable: false,
+configurable: true,
+value: function() {
+var o = this;
+var idx = 0;
+var ks = Object.keys( o );
+return {
+next: function() {
+return {
+value: o[ks[idx++]],
+done: (idx > ks.length)
+};
+}
+};
+}
+} );
+// 手动遍历 myObject
+var it = myObject[Symbol.iterator]();
+it.next(); // { value:2, done:false } 
+it.next(); // { value:3, done:false } 
+it.next(); // { value:undefined, done:true }
+// 用 for..of 遍历 myObject
+for (var v of myObject) {
+console.log( v );
+}
+// 2
+// 3
+```
+
 
 
 
