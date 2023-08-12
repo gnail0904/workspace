@@ -158,6 +158,22 @@ Bar.prototype = Foo.prototype 并不会创建一个关联到 Bar.prototype 的�
 Bar.prototype = Object.create( Foo.prototype )。
 ```
 
+Bar.prototype = new Foo() 的确会创建一个关联到 Bar.prototype 的新对象。但是它使用 了 Foo(..) 的“构造函数调用”，如果函数 Foo 有一些副作用（比如写日志、修改状态、注 册到其他对象、给 this 添加数据属性，等等）的话，就会影响到 Bar() 的“后代”，后果 不堪设想
+
+```javascript
+// ES6 之前需要抛弃默认的 Bar.prototype
+Bar.ptototype = Object.create( Foo.prototype );
+// ES6 开始可以直接修改现有的 Bar.prototype
+Object.setPrototypeOf( Bar.prototype, Foo.prototype );
+```
+
+
+
+```javascript
+a instanceof Foo; // true
+
+```
+
 
 
 # 心得
