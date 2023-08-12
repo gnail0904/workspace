@@ -128,6 +128,17 @@ console.log( v );
 // 3
 ```
 
+# JS类
+
+```javascript
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+```
+
 
 
 
