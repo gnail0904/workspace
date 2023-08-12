@@ -171,7 +171,11 @@ Object.setPrototypeOf( Bar.prototype, Foo.prototype );
 
 ```javascript
 a instanceof Foo; // true
-
+instanceof 操作符的左操作数是一个普通的对象，右操作数是一个函数。instanceof 回答
+的问题是：在 a 的整条 [[Prototype]] 链中是否有指向 Foo.prototype 的对象?
+    可惜，这个方法只能处理对象（a）和函数（带 .prototype 引用的 Foo）之间的关系。如
+果你想判断两个对象（比如 a 和 b）之间是否通过 [[Prototype]] 链关联，只用 instanceof
+无法实现
 ```
 
 
