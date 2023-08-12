@@ -80,6 +80,13 @@ myObject["foobaz"]; // world
 
 
 
+# for of 遍历
+
+```javascript
+```
+
+
+
 
 
 # 心得
