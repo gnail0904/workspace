@@ -83,6 +83,9 @@ myObject["foobaz"]; // world
 # for of 遍历
 
 ```javascript
+for(var val in obj){
+    console.log(val);   
+}
 ```
 
 
