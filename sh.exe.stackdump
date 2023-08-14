@@ -1,3 +1,4 @@
+    171 [main] sh 270 cygwin_exception::open_stackdumpfile: Dumping stack trace to sh.exe.stackdump
 Stack trace:
 Frame        Function    Args
 000FFFFCD30  0018006286E (001802825B0, 0018026DE51, 00000000059, 000FFFFB700)
