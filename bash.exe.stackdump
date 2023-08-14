@@ -1,3 +1,4 @@
+    353 [main] bash 654 cygwin_exception::open_stackdumpfile: Dumping stack trace to bash.exe.stackdump
 Stack trace:
 Frame        Function    Args
 000FFFFCD30  0018006286E (001802825B0, 0018026DE51, 00000000059, 000FFFFB6F0)
