@@ -362,6 +362,27 @@ npm list grunt # 查看某个模块的版本号
 - **main** - main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。
 - **keywords** - 关键字
 
+**属性不全，待不全**
+
+
+
+```shell
+npm uninstall express # 卸载模块
+npm ls  
+npm update express #更新模块
+npm search express #搜索模块
+npm init #创建模块
+
+npm adduser #注册用户
+npm publish #发布模块
+```
+
+
+
+版本号
+
+
+
 # 心得
 
 目前使用到的JavaScript还只是初级
