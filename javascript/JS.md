@@ -290,6 +290,8 @@ npm install webpack webpack-cli -D
 npm install -g cnpm --registry=https://registry.npmmirror.com
 ```
 
+可以使用cnpm命令来安装模块
+
 - 使用npm命令安装模块
 
 ```shell
@@ -380,6 +382,10 @@ npm publish #发布模块
 
 
 版本号
+
+- 如果只是修复bug，需要更新Z位。
+- 如果是新增了功能，但是向下兼容，需要更新Y位。
+- 如果有大变动，向下不兼容，需要更新X位。
 
 
 
