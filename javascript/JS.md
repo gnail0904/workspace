@@ -318,16 +318,49 @@ var express = require("express")
 npm err! Error: connect ECONNREFUSED 127.0.0.1:8087 
 
 
-
+$ npm config set proxy null // 解决办法
 ```
 
 
 
+### 本地安装
+
+- 1. 将安装包放在 ./node_modules 下（运行 npm 命令时所在的目录），如果没有 node_modules 目录，会在当前执行 npm 命令的目录下生成 node_modules 目录。
+
+- 2. 可以通过 require() 来引入本地安装的包。
+
+     
+
+### 全局安装
+
+- 1. 将安装包放在 /usr/local 下或者你 node 的安装目录。
+- 2. 可以直接在命令行里使用。
 
 
 
+查看安装信息
+
+```shell	
+npm list -g # 查看所有全局安装的模块
+npm list grunt # 查看某个模块的版本号
+```
+
+## package.json
 
 
+
+### Package.json 属性说明
+
+- **name** - 包名。
+- **version** - 包的版本号。
+- **description** - 包的描述。
+- **homepage** - 包的官网 url 。
+- **author** - 包的作者姓名。
+- **contributors** - 包的其他贡献者姓名。
+- **dependencies** - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在 node_module 目录下。
+- **repository** - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上。
+- **main** - main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。
+- **keywords** - 关键字
 
 # 心得
 
