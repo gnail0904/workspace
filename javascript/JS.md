@@ -266,6 +266,22 @@ npm install webpack webpack-cli -D
    npm -v
    ```
 
+   如果使用的是旧版本，在window系统用以下命令升级
+
+   ```shell
+   npm install npm -g
+   
+   ```
+
+   linux升级
+
+   ```shell
+   $ sudo npm install npm -g
+   /usr/local/bin/npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
+   npm@2.14.2 /usr/local/lib/node_modules/npm
+   
+   ```
+
    
 
 2. 使用淘宝镜像的命令
@@ -274,7 +290,36 @@ npm install webpack webpack-cli -D
 npm install -g cnpm --registry=https://registry.npmmirror.com
 ```
 
-- 
+- 使用npm命令安装模块
+
+```shell
+npm install express
+```
+
+安装好之后，express包就放在了工程目录下的node_modules目录中，因此在代码中只需要通过require('express')的方式就好，无需指定第三方包路径
+
+```javascript
+var express = require("express")
+```
+
+- 全局安装与本地安装
+
+  ```shell
+  npm install express          # 本地安装
+  npm install express -g   # 全局安装
+  
+  ```
+
+  
+
+如果出现错误
+
+```shell
+npm err! Error: connect ECONNREFUSED 127.0.0.1:8087 
+
+
+
+```
 
 
 
