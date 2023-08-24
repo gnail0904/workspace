@@ -391,7 +391,23 @@ npm publish #发布模块
 
 # npm i -S -D -g
 
--
+-S 等同于--save 保存在package.json文件中，是在dependencies 下，
+
+--save安装包信息将加入到dependencies（生产环境）中，生产阶段的依赖，也就是项目运行时的依赖，就是程序上线后仍然需要依赖；
+
+
+
+-D
+
+-save-dev安装包信息将加入到devDependencies（开发环境）中，开发阶段的依赖，就是我们在开发过程中需要的依赖，只在开发阶段起作用；
+
+
+
+# -g
+
+等同于--global的简写，对模块进行全局安装，作用于全局环境下，
+--global安装包信息是指把模块安装到操作系统上，
+一般会安装在AppDataAppData\Roaming\npm目录下
 
 
 
