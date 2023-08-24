@@ -250,7 +250,7 @@ __filename，可以动态获取当前文件夹的绝对路径
 npm init  //
 
 下载并安装 webpack
-输入指令: npm install webpack webpack-cli -g
+输入指令: npm install webpack webpack-cli -g  
 npm install webpack webpack-cli -D  
 ```
 
@@ -386,6 +386,12 @@ npm publish #发布模块
 - 如果只是修复bug，需要更新Z位。
 - 如果是新增了功能，但是向下兼容，需要更新Y位。
 - 如果有大变动，向下不兼容，需要更新X位。
+
+
+
+# npm i -S -D -g
+
+-
 
 
 
