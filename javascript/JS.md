@@ -206,6 +206,14 @@ webpack是一种前端资源构建工具，一个静态模块打包器，在webp
 
 loader让webpack能够处理哪些非JavaScript文件（webpack自身只理解JavaScript）
 
+loader有两个属性：
+
+test属性，识别出哪些文件会被转换
+
+use属性，定义在进行转换时，应该使用哪个loader
+
+webpack.config.js
+
 ### plugins插件
 
 可以执行范围更广的任务，插件的范围包括，从打包优化和压缩，一直到重新定义环境中的变量等
@@ -225,6 +233,16 @@ production:能让代码优化上线运行的环境
 
 
 ![img](https://img2022.cnblogs.com/blog/694493/202207/694493-20220705193915200-1963588822.png)
+
+
+
+__dirname是一个成员，用来动态获取文件模块所属的绝对路径
+
+__filename，可以动态获取当前文件夹的绝对路径
+
+
+
+## Webpack体验
 
 
 
