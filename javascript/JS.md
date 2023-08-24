@@ -186,6 +186,32 @@ instanceof 操作符的左操作数是一个普通的对象，右操作数是一
 
 
 
+# Webpack
+
+## webpack是什么
+
+webpack是一种前端资源构建工具，一个静态模块打包器，在webpack看来前端的所有资源文件（js/css/json/img/less）都会作为模块处理，它将根据模块的依赖关系进行静态分析，打包生成对应的静态资源（bundle）
+
+## webpack五个核心概念
+
+### Entry入口
+
+指示webpack以哪个文件为入口起点开始打包，分析构建内部依赖图
+
+### output输出
+
+指示webpack打包后的资源bundles输出到那里去，以及如何明明
+
+### loader
+
+### plugins插件
+
+### mode
+
+
+
+
+
 
 
 # 心得
