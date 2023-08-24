@@ -204,11 +204,27 @@ webpack是一种前端资源构建工具，一个静态模块打包器，在webp
 
 ### loader
 
+loader让webpack能够处理哪些非JavaScript文件（webpack自身只理解JavaScript）
+
 ### plugins插件
+
+可以执行范围更广的任务，插件的范围包括，从打包优化和压缩，一直到重新定义环境中的变量等
 
 ### mode
 
+模式mode指示webpack使用相应模式的配置
 
+development:能让代码本地调式运行的环境
+
+​	会将DefinePlugin中process.env.NODE_ENV的值设置为development
+
+production:能让代码优化上线运行的环境
+
+​	会将DefinePlugin中process.env.NODE_ENV的值设置为production
+
+
+
+![img](https://img2022.cnblogs.com/blog/694493/202207/694493-20220705193915200-1963588822.png)
 
 
 
