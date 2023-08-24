@@ -258,6 +258,28 @@ npm install webpack webpack-cli -D
 
 
 
+# npm
+
+1. 查看版本
+
+   ```shell
+   npm -v
+   ```
+
+   
+
+2. 使用淘宝镜像的命令
+
+```shell
+npm install -g cnpm --registry=https://registry.npmmirror.com
+```
+
+- 
+
+
+
+
+
 
 
 
