@@ -244,6 +244,20 @@ __filename，可以动态获取当前文件夹的绝对路径
 
 ## Webpack体验
 
+```javascript
+初始化 package.json 输入指令:
+
+npm init  //
+
+下载并安装 webpack
+输入指令: npm install webpack webpack-cli -g
+npm install webpack webpack-cli -D
+```
+
+
+
+
+
 
 
 
