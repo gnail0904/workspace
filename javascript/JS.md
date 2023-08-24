@@ -251,7 +251,7 @@ npm init  //
 
 下载并安装 webpack
 输入指令: npm install webpack webpack-cli -g
-npm install webpack webpack-cli -D
+npm install webpack webpack-cli -D  
 ```
 
 
