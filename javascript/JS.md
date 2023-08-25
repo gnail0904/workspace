@@ -413,7 +413,9 @@ npm publish #发布模块
 
 # ES Module 和CommonJS
 
+原生 ESM 文件
 
+常用的是`CommonJS`和基于 `AMD` 的其他模块系统 如 `RequireJS`
 
 
 
