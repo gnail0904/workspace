@@ -411,6 +411,12 @@ npm publish #发布模块
 
 
 
+# ES Module 和CommonJS
+
+
+
+
+
 # 心得
 
 目前使用到的JavaScript还只是初级
