@@ -423,6 +423,20 @@ npm publish #发布模块
 
 
 
+```javascript
+<script setup> // SETUP是she
+import { ref } from 'vue'
+
+const awesome = ref(true)
+
+function toggle() {
+  // ...
+}
+</script>
+```
+
+
+
 
 
 # 心得
